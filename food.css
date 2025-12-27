@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.bg-container{
+    background-image: url("https://img.freepik.com/premium-photo/red-chilli-chilli-flakes-table-with-text-space-top-view-dark-background_78502-283.jpg?ga=GA1.1.237841452.1729168047&semt=ais_hybrid");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.nav-bar{
+    background-color: white;
+    min-width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: fixed;
+}
+
+.company-logo{
+    width: 80px;
+    margin-left: 20px;
+}
+
+.list-item-container{
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.list-items{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.list-names{
+    color: black;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.menu-bar{
+    width: 40px;
+    margin-right: 20px;
+    display: none;
+}
+
+.heading{
+    color: white;
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: 700;
+    position: relative;
+    top: 40%;
+    left: 40%;
+    width: 350px;
+    transition: 1s linear;   
+}
+
+@media all and (max-width:600px){
+    .menu-bar{
+        display: block;
+        margin-right: 10px;
+    }
+    .list-item-container{
+        background-color: white;
+        width: 100vw;
+        position: absolute;
+        top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 1s linear;
+    }
+    .list-items{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .heading{
+        position: relative;
+        top: 25%;
+        left: 30%;
+        width: 175px;
+    }
+}
+
+.why-choose-us-background{
+    background-color: rgb(255, 238, 238);
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-top: 10px;
+    padding: 20px;
+}
+
+.why-choose-us-heading{
+    text-align: center;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.why-choose-us-card{
+    background-color: white;
+    width: 300px;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    flex-grow: 1;
+    margin: 30px;
+}
+
+.food-service{
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.why-choose-us-para{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 400;
+
+}
+
+.span{
+    font-size: 30px;
+}
+
+.why-choose-us-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.explore-menu-card{
+    background-color: white;
+    width: 360px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+.menu-items{
+    width: 310px;
+    height: 240px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+
+.view-more-position{
+    align-self: flex-end;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.explore-menu-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media all and (max-width:600px){
+    .menu-items{
+        width: 280px;
+        height: 200px;
+    }
+    .explore-menu-card{
+        padding: 20px;   
+    }
+}
+
+.follow-us-heading{
+    text-align: center;
+    font-size: 45px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.follow-us-image{
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.follow-us-image-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width:600px){
+    .follow-us-image{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.contact{
+    background-color: rgb(49, 48, 48);
+    min-width:100vw ;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail{
+    color: white;
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.address{
+    color: white;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+@media all and (max-width:600px){
+    .mail{
+        font-size: 24px;
+    }
+    .address{
+        font-size:16px ;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodie.com</title>
+    <link rel="stylesheet" href="food.css">
+</head>
+<body>
+    <div class="bg-container" id="home">
+        <nav class="nav-bar">
+            <img src="https://img.freepik.com/premium-photo/simple-luxury-restaurant-logo-design-linear-style_1315895-1740.jpg?ga=GA1.1.237841452.1729168047&semt=ais_siglip" class="company-logo"/>
+            <ul class="list-item-container" id="menu-items">
+                <li class="list-items">
+                    <a href="#home" class="list-names">Home</a>
+                </li>
+                <li class="list-items">
+                    <a href="#why-choose-us" class="list-names">Why Choose Us?</a>
+                </li>
+                <li class="list-items">
+                    <a href="#explore-menu" class="list-names">Menu</a>
+                </li>
+                <li class="list-items">
+                    <a href="#contact" class="list-names">Contact</a>
+                </li>
+            </ul>
+            <img src="https://cdn-icons-png.freepik.com/256/9073/9073315.png?ga=GA1.1.237841452.1729168047&semt=ais_hybrid" class="menu-bar" id="menu-bar-icon"/>
+        </nav>
+        <h1 class="heading">Food Is The Ingredient That Binds Us Together.</h1>
+        <script>
+            let icon = document.getElementById("menu-bar-icon");
+            let menuItems = document.getElementById("menu-items");
+            menuItems.style.height = "0px"
+            icon.onclick=function(){
+                if(menuItems.style.height == "0px"){
+                menuItems.style.height = "300px"
+                }else{
+                    menuItems.style.height = "0px"
+                }
+            }
+        </script>
+        </div>
+        <div class="why-choose-us-background" id="why-choose-us">
+            <div class="why-choose-us-heading"><h1>Why Choose Us?</h1></div>
+           <div class="why-choose-us-container">
+            <div class="why-choose-us-card">
+                <img src="https://cdn-icons-png.freepik.com/256/11644/11644979.png?ga=GA1.1.237841452.1729168047&semt=ais_hybrid" width="120px"/>
+                <h1 class="food-service">Food Service</h1>
+                <p class="why-choose-us-para">Experience fine dining at the comfort of your home. All our orders are carefully packed and arranged to give you the nothing less than perfect.</p>
+            </div>
+            <div class="why-choose-us-card">
+                <img src="https://cdn-icons-png.freepik.com/256/6006/6006974.png?ga=GA1.1.237841452.1729168047&semt=ais_hybrid" width="120px"/>
+                <h1 class="food-service">Fresh Food</h1>
+                <p class="why-choose-us-para">The Fresh Food group provides fresh-cut fruits and vegetables directly picked from our partner farms and farm houses so that you always get them tree to plate.</p>
+            </div>
+            <div class="why-choose-us-card">
+                <img src="https://cdn-icons-png.freepik.com/256/14649/14649165.png?ga=GA1.1.237841452.1729168047&semt=ais_hybrid" width="120px"/>
+                <h1 class="food-service">Best Offers</h1>
+                <p class="why-choose-us-para">Food Coupons & Offers upto 50% OFF and Exclusive Promo Codes on All Online Food Orders.</p>
+            </div>
+            </div>
+            <div class="why-choose-us-heading"><h1>Explore Menu</h1></div>
+           <div class="explore-menu-container">
+            <div class="explore-menu-card">
+                <img src="https://img.freepik.com/free-photo/side-view-pilaf-with-stewed-beef-meat-plate_141793-5057.jpg?ga=GA1.1.237841452.1729168047&semt=ais_siglip" class="menu-items"/>
+                <h1>Chicken Biryani</h1>
+                <p class="view-more-position">
+                    <a href="">View More</a>
+                </p>
+            </div>
+            <div class="explore-menu-card" id="explore-menu">
+                <img src="https://img.freepik.com/free-photo/high-angle-shot-delicious-hot-spicy-dish-called-drums-heaven-table_181624-50861.jpg?ga=GA1.1.237841452.1729168047&semt=ais_hybrid" class="menu-items"/>
+                <h1>Chicken Lollipop</h1>
+                <p class="view-more-position">
+                    <a href="">View More</a>
+                </p>
+            </div>
+            <div class="explore-menu-card">
+                <img src="https://img.freepik.com/free-photo/side-view-baked-chicken-with-cucumber-lemon-seasoning-bread-table_141793-4757.jpg?ga=GA1.1.237841452.1729168047&semt=ais_hybrid" class="menu-items"/>
+                <h1>Chicken Tandoori</h1>
+                <p class="view-more-position">
+                    <a href="">View More</a>
+                </p>
+            </div>
+            <div class="explore-menu-card">
+                <img src="https://img.freepik.com/premium-photo/tawa-pulao-pulav-pilaf-pilau-is-indian-street-food-made-using-basmati-rice-vegetables-spices-selective-focus_466689-70823.jpg?ga=GA1.1.237841452.1729168047&semt=ais_hybrid" class="menu-items"/>
+                <h1>Vegitable Rice</h1>
+                <p class="view-more-position">
+                    <a href="">View More</a>
+                </p>
+            </div>
+            <div class="explore-menu-card">
+                <img src="https://img.freepik.com/free-photo/front-close-view-delicious-fried-fishes-lemon-slices-brown-plate-pepper-mix-colors-table-with-free-space_179666-18175.jpg?ga=GA1.1.237841452.1729168047&semt=ais_siglip" class="menu-items"/>
+                <h1>Fish Fry</h1>
+                <p class="view-more-position">
+                    <a href="">View More</a>
+                </p>
+            </div>
+            <div class="explore-menu-card">
+                <img src="https://img.freepik.com/premium-photo/fish-curry-seer-fish-curry-traditional-indian-fish-curry-kerala-special-dish-using-coconut-arranged-white-bowl-garnished-with-curry-leaves-malabar-tamarind-white-textured-background_527904-2016.jpg?ga=GA1.1.237841452.1729168047&semt=ais_siglip" class="menu-items"/>
+                <h1>Fish Curry</h1>
+                <p class="view-more-position">
+                    <a href="">View More</a>
+                </p>
+            </div>
+        </div>
+        <h1 class="follow-us-heading" id="follow-us">Follow us</h1>
+        <div class="follow-us-image-position">
+            <img src="https://cdn-icons-png.freepik.com/256/2504/2504918.png?ga=GA1.1.237841452.1729168047&semt=ais_hybrid" class="follow-us-image"/>
+            <img src="https://cdn-icons-png.freepik.com/256/5968/5968830.png?ga=GA1.1.237841452.1729168047&semt=ais_hybrid" class="follow-us-image"/>
+            <img src="https://cdn-icons-png.freepik.com/256/2504/2504923.png?ga=GA1.1.237841452.1729168047&semt=ais_hybrid" class="follow-us-image"/>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <img src="https://img.freepik.com/premium-photo/simple-luxury-restaurant-logo-design-linear-style_1315895-1740.jpg?ga=GA1.1.237841452.1729168047&semt=ais_siglip" width="100px" height="80"/>
+        <h1 class="mail">order@foodlogo.com</h1>
+        <p class="address">Gandhi Nagar, Kurnool, Andhra pradesh, India</p>
+    </div>
+</div>
+</body>
+</html>
